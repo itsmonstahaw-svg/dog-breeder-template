@@ -4,16 +4,16 @@ import { ArrowRight } from "lucide-react";
 
 export const Gallery = () => {
   const images = [
-    "https://vibe.filesafe.space/1780936329601011433/assets/5b36b915-99a8-4c2b-84af-ff5296edeeb5.png",
-    "https://vibe.filesafe.space/1780936329601011433/assets/f1ea1b28-886e-4823-bfd0-a76fbd2762e0.png",
-    "https://vibe.filesafe.space/1780936329601011433/assets/f0ad2cc1-a229-4c28-99cc-1a3e5a52d8f6.png",
-    "https://vibe.filesafe.space/1780936329601011433/assets/b0ae585a-2a60-4be7-ae6d-22122224fa59.png",
-    "https://vibe.filesafe.space/1780936329601011433/assets/8af997ba-f944-40fb-be26-5ee7792d4702.png",
-    "https://vibe.filesafe.space/1780936329601011433/assets/38a2eede-bbce-4783-b0bf-77192dc8ec82.png",
-    "https://vibe.filesafe.space/1780936329601011433/assets/8cf8471b-2556-42e2-b6aa-5c6238154169.png",
-    "https://vibe.filesafe.space/1780936329601011433/assets/934da5ad-21da-4005-9ab5-ba2f14a2f1e2.png",
-    "https://vibe.filesafe.space/1780936329601011433/assets/4a26a7b1-1b2c-4125-8f1c-82e7bbffd09c.png",
-    "https://vibe.filesafe.space/1780936329601011433/assets/2a4e5219-3003-4461-b3dc-83841665b0bc.png",
+    "/pictures/ourwork/pic1.png",
+    "/pictures/ourwork/pic2.png",
+    "/pictures/ourwork/pic3.png",
+    "/pictures/ourwork/pic4.png",
+    "/pictures/ourwork/pic5.png",
+    "/pictures/ourwork/pic6.png",
+    "/pictures/ourwork/pic7.png",
+    "/pictures/ourwork/pic8.png",
+    "/pictures/ourwork/pic9.png",
+    "/pictures/ourwork/pic10.png",
   ];
 
   const col1 = [images[0], images[1], images[2]];

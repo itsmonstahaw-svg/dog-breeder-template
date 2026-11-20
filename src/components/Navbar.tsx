@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Phone, Menu, ChevronDown } from "lucide-react";
+import { Phone, MessageSquare, Menu, ChevronDown } from "lucide-react";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Dialog, DialogContent, DialogTrigger, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 import { useState, useEffect } from "react";
@@ -36,18 +36,18 @@ export const Navbar = () => {
       name: "Service Areas",
       href: "#areas",
       subLinks: [
-        { name: "Atlanta, GA", href: "#" },
-        { name: "Marietta, GA", href: "#" },
-        { name: "Alpharetta, GA", href: "#" },
-        { name: "Roswell, GA", href: "#" },
+        { name: "Atlanta, GA", href: "/locations/atlanta-ga" },
+        { name: "Marietta, GA", href: "/locations/marietta-ga" },
+        { name: "Alpharetta, GA", href: "/locations/alpharetta-ga" },
+        { name: "Roswell, GA", href: "/locations/roswell-ga" },
       ],
     },
     { name: "Blog", href: "#" },
     { name: "Contact", href: "#" },
   ];
 
-  const businessName = "Taylored Paws Grooming";
-  const initials = "TPG";
+  const businessName = "Treasured Ones Personal Dog Trainer K9 Training";
+  const initials = "TO";
 
   return (
     <header
@@ -64,7 +64,8 @@ export const Navbar = () => {
               {initials}
             </div>
             <div className="flex flex-col leading-tight justify-center text-left text-[10px] sm:text-[11px] md:text-xs max-w-[130px] sm:max-w-[180px] lg:max-w-none">
-              <span>{businessName}</span>
+              <span>Treasured</span>
+              <span>Ones</span>
             </div>
           </div>
         </div>
@@ -118,10 +119,15 @@ export const Navbar = () => {
               <QuoteForm />
             </DialogContent>
           </Dialog>
-          <Button variant="outline" className="font-bold border-primary bg-white text-primary hover:bg-white/90 hover:text-primary flex items-center gap-2" asChild>
-            <a href="tel:+14235206229">
+          <Button variant="outline" className="font-bold border-brand-blue bg-white text-brand-blue hover:bg-white/90 hover:text-brand-blue flex items-center gap-2" asChild>
+            <a href="tel:+17196495514">
               <Phone className="h-4 w-4" />
-              (423) 520-6229
+              (719) 649-5514
+            </a>
+          </Button>
+          <Button variant="ghost" size="icon" className="text-white hover:text-primary hover:bg-white/10" asChild>
+            <a href="sms:+17196495514" aria-label="Text Us">
+              <MessageSquare className="h-5 w-5" />
             </a>
           </Button>
         </div>
@@ -177,10 +183,16 @@ export const Navbar = () => {
                     <QuoteForm />
                   </DialogContent>
                 </Dialog>
-                <Button variant="outline" className="w-full font-bold bg-white text-primary hover:bg-white/90 hover:text-primary flex items-center gap-2" asChild>
-                  <a href="tel:+14235206229">
+                <Button variant="outline" className="w-full font-bold bg-white text-brand-blue hover:bg-white/90 hover:text-brand-blue flex items-center gap-2" asChild>
+                  <a href="tel:+17196495514">
                     <Phone className="h-4 w-4" />
-                    (423) 520-6229
+                    (719) 649-5514
+                  </a>
+                </Button>
+                <Button variant="outline" className="w-full font-bold flex items-center gap-2" asChild>
+                  <a href="sms:+17196495514">
+                    <MessageSquare className="h-4 w-4" />
+                    Text Us
                   </a>
                 </Button>
               </div>

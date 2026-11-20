@@ -1,15 +1,14 @@
-import { CalendarCheck, Car, Scissors, Heart, RefreshCw } from "lucide-react";
+import { CalendarCheck, Car, ClipboardCheck, Heart } from "lucide-react";
 import { useState } from "react";
 
 export const Process = () => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   const steps = [
-    { icon: CalendarCheck, title: "Book\nAppointment" },
+    { icon: CalendarCheck, title: "Book\nYour Stay" },
     { icon: Car, title: "Drop\nOff" },
-    { icon: Scissors, title: "Grooming\nTime" },
+    { icon: ClipboardCheck, title: "Daily\nUpdates" },
     { icon: Heart, title: "Happy\nPick Up" },
-    { icon: RefreshCw, title: "Book\nAgain" },
   ];
 
   return (
@@ -24,13 +23,13 @@ export const Process = () => {
               <div className="hidden md:block flex-grow h-[2px] bg-primary mt-4"></div>
             </div>
             <p className="text-lg text-gray-900">
-              From booking to pickup — here's what to expect
+              From booking to pick up — here's how your dog's stay works
             </p>
           </div>
         </div>
 
         <div className="relative w-full mt-24 overflow-x-clip py-4 -my-4">
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-8 md:gap-4 relative z-10">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-4 relative z-10">
             {steps.map((step, index) => (
               <div
                 key={index}

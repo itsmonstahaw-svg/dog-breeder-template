@@ -1,5 +1,6 @@
 import { MapPin, Phone, Facebook, Instagram } from "lucide-react";
 import { useSearchParams } from "react-router-dom";
+import { locations } from "@/data/locations";
 
 const GoogleIcon = ({ className }: { className?: string }) => (
   <svg viewBox="0 0 24 24" fill="currentColor" className={className}>
@@ -20,17 +21,18 @@ export const Footer = () => {
           <div className="space-y-6">
             <h4 className="text-white font-black uppercase tracking-wider">Contact Us</h4>
             <div className="flex items-center gap-3 text-white font-black tracking-tighter uppercase">
-              <div className="flex items-center justify-center w-10 h-10 rounded bg-primary text-primary-foreground font-black text-[11px] shrink-0">
-                TPG
+              <div className="flex items-center justify-center w-10 h-10 rounded bg-primary text-primary-foreground font-black text-[10px] shrink-0">
+                TO
               </div>
-              <div className="flex flex-col leading-tight text-base sm:text-lg max-w-[200px]">
-                <span>Taylored Paws Grooming</span>
+              <div className="flex flex-col leading-tight text-sm max-w-[180px]">
+                <span>Treasured</span>
+                <span>Ones</span>
               </div>
             </div>
             <div className="space-y-3">
               <div className="flex items-center gap-3">
                 <Phone className="w-4 h-4 text-primary shrink-0" />
-                <a href="tel:+14235206229" className="font-bold hover:text-primary transition-colors">(423) 520-6229</a>
+                <a href="tel:+17196495514" className="font-bold hover:text-primary transition-colors">(719) 649-5514</a>
               </div>
               <div className="flex items-center gap-3">
                 <MapPin className="w-4 h-4 text-primary shrink-0" />
@@ -76,8 +78,16 @@ export const Footer = () => {
           <div className="space-y-6">
             <h4 className="text-white font-black uppercase tracking-wider">Service Areas</h4>
             <ul className="space-y-3">
-              <li><span className="text-primary font-bold">{displayCity}</span></li>
-              <li><span className="text-gray-400">and surrounding communities</span></li>
+              {cityParam && !locations.some((l) => l.slug === cityParam) && (
+                <li><span className="text-primary font-bold">{displayCity}</span></li>
+              )}
+              {locations.map((loc) => (
+                <li key={loc.slug}>
+                  <a href={`/locations/${loc.slug}`} className="hover:text-primary transition-colors">
+                    {loc.city}, {loc.state}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
 
@@ -98,7 +108,7 @@ export const Footer = () => {
         </div>
 
         <div className="mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500">
-          <p>&copy; {new Date().getFullYear()} Taylored Paws Grooming. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Treasured Ones Personal Dog Trainer K9 Training. All rights reserved.</p>
           <div className="flex gap-6">
             <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-white transition-colors">Terms & Conditions</a>

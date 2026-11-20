@@ -21,7 +21,7 @@ export const About = () => {
             </div>
 
             <p className="text-lg text-gray-900 leading-relaxed">
-              Taylored Paws Grooming has been the trusted choice for dog owners in the Greater Atlanta area for over a decade. We deliver stress-free, professional grooming in a safe and loving environment your dog will actually enjoy.
+              We have been the trusted choice for dog boarding in the Greater Atlanta area for over a decade. We provide a safe, comfortable, and loving home-away-from-home where your dog is cared for like family — every single stay.
             </p>
 
             {/* Stats */}

@@ -1,22 +1,24 @@
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { Button } from "@/components/ui/button";
+import { Phone } from "lucide-react";
 
 export const FAQAndServiceAreas = () => {
   const faqs = [
     {
-      question: "How often should my dog be groomed?",
-      answer: "It depends on the breed, coat type, and lifestyle. Generally, most dogs benefit from professional grooming every 4-8 weeks. Short-haired breeds might only need a bath every 8-12 weeks, while long-haired breeds need more frequent maintenance."
+      question: "What does a typical boarding stay include?",
+      answer: "Every stay includes comfortable sleeping arrangements, supervised group or private playtime, regular feeding on your dog's normal schedule, daily walks, and lots of love and attention from our team."
     },
     {
-      question: "Do I need to make an appointment?",
-      answer: "Yes, we work by appointment to ensure every dog gets the dedicated time and attention they deserve without feeling rushed. You can book online or call us."
+      question: "Do I need to make a reservation?",
+      answer: "Yes, we work by reservation to ensure every dog receives the care and space they deserve. You can book online or call us directly. We recommend booking in advance, especially around holidays."
     },
     {
-      question: "Can I stay and watch my dog being groomed?",
-      answer: "For the safety and comfort of your pet, we ask that owners do not stay in the grooming area. Dogs often become anxious or overly excited when they can see or hear their owners, which makes the grooming process difficult and potentially unsafe."
+      question: "Will I receive updates while my dog is boarding?",
+      answer: "Absolutely. We send daily photo and message updates so you can see exactly how your dog is doing. Your peace of mind is just as important to us as your dog's comfort."
     },
     {
-      question: "What vaccinations are required?",
-      answer: "For the safety of all our furry clients, we require proof of current Rabies, DHPP (Distemper, Hepatitis, Parainfluenza, Parvovirus), and Bordetella vaccinations."
+      question: "What vaccinations are required for boarding?",
+      answer: "For the safety of all our guests, we require proof of current Rabies, DHPP (Distemper, Hepatitis, Parainfluenza, Parvovirus), and Bordetella vaccinations before any stay."
     }
   ];
 
@@ -41,12 +43,27 @@ export const FAQAndServiceAreas = () => {
                 </AccordionItem>
               ))}
             </Accordion>
+
+            <div className="mt-10 flex flex-col sm:flex-row sm:items-center justify-between gap-4 bg-white border border-border rounded-xl p-5 shadow-sm">
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
+                  <Phone className="w-5 h-5 text-primary" />
+                </div>
+                <div>
+                  <h3 className="font-black text-foreground uppercase tracking-tight">Still have questions?</h3>
+                  <p className="text-sm text-gray-600">Call us directly. Real answers, no scripts.</p>
+                </div>
+              </div>
+              <Button className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold rounded h-11 px-6 shrink-0" asChild>
+                <a href="tel:+17196495514">Call (719) 649-5514</a>
+              </Button>
+            </div>
           </div>
-          <div className="relative rounded-lg overflow-hidden h-[400px] lg:h-[450px]">
+          <div className="relative rounded-lg overflow-hidden">
             <img
-              src="https://vibe.filesafe.space/1780936329601011433/assets/b8747c63-5708-4cab-a942-a34106b7fa40.png"
-              alt="Beautifully groomed golden retriever"
-              className="object-cover w-full h-full absolute inset-0"
+              src="/pictures/faq.png"
+              alt="Happy dogs at our facility"
+              className="w-full h-auto object-cover rounded-lg"
             />
           </div>
         </div>

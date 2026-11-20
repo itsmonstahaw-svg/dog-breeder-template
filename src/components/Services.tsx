@@ -4,39 +4,39 @@ import { motion } from "framer-motion";
 export const Services = () => {
   const services = [
     {
-      title: "Bath & Brush",
-      description: "Premium shampoo, conditioning, blow dry, thorough brush out, and ear cleaning.",
-      image: "https://vibe.filesafe.space/1780936329601011433/assets/5b1d7644-7fe3-49d1-aa19-e8f9a79a55aa.png",
+      title: "Overnight Boarding",
+      description: "Safe, comfortable overnight stays with cozy sleeping arrangements and round-the-clock care for your dog.",
+      image: "/pictures/services/overnight-boarding.png",
       href: "#"
     },
     {
-      title: "Full Groom",
-      description: "Complete bath & brush package plus a full body haircut styled to your preference.",
-      image: "https://vibe.filesafe.space/1780936329601011433/assets/01b5616d-001b-444b-a7d7-ef3fc51dae50.png",
+      title: "Doggie Daycare",
+      description: "A fun-filled day of supervised play, socialisation, and activities in our spacious daycare facility.",
+      image: "/pictures/services/doggie-daycare.png",
       href: "#"
     },
     {
-      title: "Puppy's First Trim",
-      description: "Gentle introduction to grooming with a bath, light trim, and lots of positive reinforcement.",
-      image: "https://vibe.filesafe.space/1780936329601011433/assets/69f97f71-97c3-461e-914e-2e1aad3bf8cd.png",
+      title: "Spa & Bath",
+      description: "Premium bath, blow dry, brush out, ear cleaning, and nail trim — leaving your pup fresh and clean.",
+      image: "/pictures/services/spa-bath.png",
       href: "#"
     },
     {
-      title: "De-Shedding Treatment",
-      description: "Specialized shampoo and intensive brushing to significantly reduce loose undercoat.",
-      image: "https://vibe.filesafe.space/1780936329601011433/assets/96cbde48-5288-4032-b89a-5aa436aa7e10.png",
+      title: "Training",
+      description: "Professional obedience and behavioural training tailored to your dog's age, breed, and personality.",
+      image: "/pictures/services/training.png",
       href: "#"
     },
     {
-      title: "Nail Trimming & Grinding",
-      description: "Safe and comfortable nail clipping followed by grinding for smooth, rounded edges.",
-      image: "https://vibe.filesafe.space/1780936329601011433/assets/728398af-241e-44f0-b303-d19b4a652f82.png",
+      title: "Playtime & Social",
+      description: "Structured group play sessions designed to build confidence, manners, and social skills.",
+      image: "/pictures/services/playtime&social.png",
       href: "#"
     },
     {
-      title: "Spa Upgrades",
-      description: "Blueberry facials, paw balm, teeth brushing, and premium conditioning treatments.",
-      image: "https://vibe.filesafe.space/1780936329601011433/assets/2f1e7e64-6fc9-4fe0-b634-61fc45e9b45e.png",
+      title: "Private Suites",
+      description: "Luxury private suites for dogs who prefer a quieter, more personalised boarding experience.",
+      image: "/pictures/services/private_suites.png",
       href: "#"
     }
   ];
@@ -53,7 +53,7 @@ export const Services = () => {
               <div className="hidden md:block flex-grow h-[2px] bg-primary mt-4"></div>
             </div>
             <p className="text-lg text-gray-600">
-              Professional grooming and comprehensive spa services
+              Professional boarding, daycare, and comprehensive pet care services
             </p>
           </div>
         </div>

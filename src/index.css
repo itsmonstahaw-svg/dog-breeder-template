@@ -12,6 +12,7 @@
     --popover-foreground: 220 25% 10%;
     --primary: 199 89% 42%;
     --primary-foreground: 0 0% 100%;
+    --brand-blue: 212 100% 45%;
     --secondary: 210 20% 96%;
     --secondary-foreground: 220 25% 10%;
     --muted: 210 20% 94%;
@@ -43,6 +44,7 @@
     --popover-foreground: 210 40% 98%;
     --primary: 199 89% 48%;
     --primary-foreground: 222.2 47.4% 11.2%;
+    --brand-blue: 212 100% 50%;
     --secondary: 217.2 32.6% 17.5%;
     --secondary-foreground: 210 40% 98%;
     --muted: 217.2 32.6% 17.5%;
@@ -70,6 +72,9 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans;
+  }
+  h1, h2, h3, h4 {
+    @apply font-heading;
   }
 }

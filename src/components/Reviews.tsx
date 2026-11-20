@@ -54,9 +54,9 @@ export const Reviews = () => {
         {/* Review Cards */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
           {[
-            { name: "Finn Russell", text: "Taylored Paws provided the most amazing grooming service. My dog looks so handsome and smells great! Highly recommend!" },
-            { name: "Sarah Jenkins", text: "The grooming process was seamless. They truly care about the dogs and it shows in how calm my pup was." },
-            { name: "Michael Thompson", text: "Best groomer we've ever worked with. The communication was excellent, and our Golden Retriever looks perfect." },
+            { name: "Finn Russell", text: "The boarding experience was absolutely incredible. Our dog came home happy, healthy, and well-rested. We couldn't be happier — highly recommend!" },
+            { name: "Sarah Jenkins", text: "The care they provide is seamless. You can tell they truly love dogs — our pup was completely calm and settled the whole stay." },
+            { name: "Michael Thompson", text: "Best boarding facility we've ever used. The daily updates gave us total peace of mind and our Golden Retriever was perfectly happy throughout." },
           ].map((review, i) => (
             <div key={i} className="bg-white rounded-xl p-6 flex flex-col gap-4 shadow-xl">
               <div className="flex items-center gap-2">
